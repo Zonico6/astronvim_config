@@ -5,5 +5,20 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   -- { import = "astrocommunity.colorscheme.catppuccin" },
-  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.note-taking.neorg"},
+  {
+    "neorg",
+    opts = {
+      load = {
+        ["core.dirman"] = {
+          config = {
+            workspaces = {
+              notes = "~/notes",
+            }
+          }
+        }
+      }
+    }
+  }
 }

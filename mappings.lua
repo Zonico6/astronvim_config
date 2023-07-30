@@ -20,6 +20,8 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["j"] = { "gj", desc = "Move down", noremap = true, expr = false},
+    ["k"] = { "gk", desc = "Move up", noremap = true, expr = false },
   },
   t = {
     -- setting a mapping to false will disable it
